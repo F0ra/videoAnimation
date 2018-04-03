@@ -113,6 +113,9 @@ footer:hover {
     height: 1200px;
 }
 
+#background {
+    background:  var(--main-bg-color);
+}
 #inner_content1 {
     position: relative;
     background:  var(--main-bg-color);
@@ -153,7 +156,7 @@ footer:hover {
    
 }
     
-#inner_content6 {
+#inner_bottom_transparent {
     position: relative;
     height: 1200PX;
     z-index: 0;
