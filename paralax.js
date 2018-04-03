@@ -54,7 +54,7 @@ let scroller = function(){
     }
     let parallaxSlowSlow = function(){
         let elem = document.querySelector("#inner_content4");
-        elem.style = `background-position: center +${0.01*window.pageYOffset}px ;`;
+        elem.style = `background-position: center -${0.02*window.pageYOffset}px ;`;
     }
     parallaxSlow();
     parallaxSlowSlow();
