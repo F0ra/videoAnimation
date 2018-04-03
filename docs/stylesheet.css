@@ -27,7 +27,7 @@ footer{
     /* font-size: 30px; */
     color: var(--main-txt-color);
     opacity: 0;
-    background-color: rgb(26, 26, 26);
+    background-color: var(--main-bg-color);
 }
 
 footer:hover {
@@ -71,6 +71,7 @@ footer:hover {
 .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
+    cursor: pointer;
 }
 
 
