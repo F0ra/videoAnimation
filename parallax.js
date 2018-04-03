@@ -1,4 +1,3 @@
-console.log("start paralax");
 let scroller = function(){
 
     let totalOffsetY = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -9,10 +8,10 @@ let scroller = function(){
         let rotationAngleClockwise = window.pageYOffset/20;
         let rotationAngleCounterClockwise =  (totalOffsetY - window.pageYOffset)/20;
         
-        console.log("pageYOffset "+window.pageYOffset);
-        console.log("rotationAngleClockwise "+rotationAngleClockwise);
-        console.log("rotationAngleCounterClockwise "+rotationAngleCounterClockwise);
-        console.log("scrollLeftInPercentage "+scrollLeftInPercentage);
+        // console.log("pageYOffset "+window.pageYOffset);
+        // console.log("rotationAngleClockwise "+rotationAngleClockwise);
+        // console.log("rotationAngleCounterClockwise "+rotationAngleCounterClockwise);
+        // console.log("scrollLeftInPercentage "+scrollLeftInPercentage);
         if(rotationAngleClockwise<60){
             elem.style = `transform: rotateX(${rotationAngleClockwise}deg);`
         }else if(scrollLeftInPercentage<15){
@@ -41,10 +40,8 @@ let scroller = function(){
         if(scrollLeftInPercentage<9){
             elem.style.display = "inline-block;";
             elem.style =`opacity: ${0.8-opacityStep}`;
-            // elem.style = "bottom: 0;";
             elem.style.fontSize =`${1+(1*opacityStep)}rem`;
         }else{
-            elem.style = "bottom: -1000;";
             elem.style.display = "none;";
         }
     }
@@ -72,8 +69,4 @@ function copyToClipBoard(text) {
     document.body.removeChild(input);
 }
 
-
 window.onscroll = scroller;
-
-
-// total offset = (document.documentElement.scrollHeight - document.documentElement.clientHeight)
